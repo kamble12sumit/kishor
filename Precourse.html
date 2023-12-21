@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0146)https://precourse.acciojob.com/solve/code-ide?question=57c88db3-e697-4799-8a05-314ee8127ba1&page=PAP&courseId=72993d1c-e63b-41fd-a1b3-11fe0a26bdaa -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="icon" href="https://precourse.acciojob.com/accio.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="https://precourse.acciojob.com/logo192.png"><link rel="manifest" href="https://precourse.acciojob.com/manifest.json"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Precourse_files/css2" rel="stylesheet"><script type="text/javascript" data-cfasync="false" charset="UTF-8" async="" src="./Precourse_files/auryc.lib.js"></script><script async="" src="./Precourse_files/clarity.js"></script><script type="text/javascript" async="" src="./Precourse_files/heap-3086122953.js"></script><script async="" src="./Precourse_files/ibzfl9r9uq"></script><script type="text/javascript">!function(t,e,n,c,r,a,i){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(a=e.createElement(c)).async=1,a.src="https://www.clarity.ms/tag/ibzfl9r9uq",(i=e.getElementsByTagName(c)[0]).parentNode.insertBefore(a,i)}(window,document,"clarity","script")</script><script type="text/javascript">window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])},heap.load("3086122953")</script><title>Precourse</title><script defer="defer" src="./Precourse_files/main.33332103.js"></script><link href="./Precourse_files/main.8e2b6e1d.css" rel="stylesheet"><style type="text/css">.rfm-marquee-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+}
+.rfm-marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.rfm-marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.rfm-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.rfm-overlay::before, .rfm-overlay::after {
+  background: linear-gradient(to right, var(--gradient-color), transparent);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+  pointer-events: none;
+  touch-action: none;
+}
+.rfm-overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.rfm-overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.rfm-marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rfm-initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rfm-child {
+  transform: var(--transform);
+}</style><style data-dynamic-styles-ar="">/** arPreserve .css-1d3bbye { box-sizing: border-box; display: flex; flex-flow: wrap; width: 100%; }.css-13qysn5 { box-sizing: border-box; margin: 0px; flex-direction: row; }@media (min-width: 600px) {
+  .css-13qysn5 { flex-basis: 41.6667%; -webkit-box-flex: 0; flex-grow: 0; max-width: 41.6667%; }
+}@media (min-width: 900px) {
+  .css-13qysn5 { flex-basis: 41.6667%; -webkit-box-flex: 0; flex-grow: 0; max-width: 41.6667%; }
+}@media (min-width: 1200px) {
+  .css-13qysn5 { flex-basis: 50%; -webkit-box-flex: 0; flex-grow: 0; max-width: 50%; }
+}@media (min-width: 1536px) {
+  .css-13qysn5 { flex-basis: 50%; -webkit-box-flex: 0; flex-grow: 0; max-width: 50%; }
+}.css-10ltnos { box-sizing: border-box; margin: 0px; flex-direction: row; max-width: max-content; }@media (min-width: 600px) {
+  .css-10ltnos { flex-basis: 58.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 58.3333%; }
+}@media (min-width: 900px) {
+  .css-10ltnos { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}@media (min-width: 1200px) {
+  .css-10ltnos { flex-basis: 50%; -webkit-box-flex: 0; flex-grow: 0; max-width: 50%; }
+}@media (min-width: 1536px) {
+  .css-10ltnos { flex-basis: 50%; -webkit-box-flex: 0; flex-grow: 0; max-width: 50%; }
+}.css-1e2dcm1 { z-index: 1500; pointer-events: none; }.css-okvapm { z-index: 1500; pointer-events: none; }.css-154ogbs { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; width: 40px; height: 40px; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 1.25rem; line-height: 1; border-radius: 50%; overflow: hidden; user-select: none; color: rgb(255, 255, 255); background-color: rgb(189, 189, 189); }.css-kfcdac { --Icon-fontSize: var(--joy-fontSize-md, 1rem); --Tooltip-arrowSize: 8px; padding: 2px 5px; z-index: var(--joy-zIndex-tooltip, 1500); border-radius: var(--joy-radius-sm, 6px); box-shadow: var(--joy-shadowRing, 0 0 #000),0px 1px 2px 0px rgba(var(--joy-shadowChannel, 21 21 21) / var(--joy-shadowOpacity, 0.08)),0px 2px 4px 0px rgba(var(--joy-shadowChannel, 21 21 21) / var(--joy-shadowOpacity, 0.08)); overflow-wrap: break-word; position: relative; font-family: var(--joy-fontFamily-body, "Inter", var(--joy-fontFamily-fallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol")); font-weight: var(--joy-fontWeight-md, 500); font-size: var(--joy-fontSize-xs, 0.75rem); line-height: var(--joy-lineHeight-md, 1.5); color: var(--variant-plainColor, var(--joy-palette-neutral-plainColor, var(--joy-palette-neutral-700, #32383E))); --variant-borderWidth: 0px; background-color: var(--joy-palette-background-surface, var(--joy-palette-neutral-50, #FBFCFE)); }.css-kfcdac::before { content: ""; display: block; position: absolute; width: 100%; height: calc(10px + var(--variant-borderWidth, 0px)); }.css-kfcdac[data-popper-placement*="bottom"]::before { top: 0px; left: 0px; transform: translateY(-100%); }.css-kfcdac[data-popper-placement*="left"]::before { top: 0px; right: 0px; transform: translateX(100%); }.css-kfcdac[data-popper-placement*="right"]::before { top: 0px; left: 0px; transform: translateX(-100%); }.css-kfcdac[data-popper-placement*="top"]::before { bottom: 0px; left: 0px; transform: translateY(100%); }.css-1cvm7jf { --Icon-fontSize: var(--joy-fontSize-lg, 1.125rem); --Tooltip-arrowSize: 10px; padding: 4px 6px; z-index: var(--joy-zIndex-tooltip, 1500); border-radius: var(--joy-radius-sm, 6px); box-shadow: var(--joy-shadowRing, 0 0 #000),0px 1px 2px 0px rgba(var(--joy-shadowChannel, 21 21 21) / var(--joy-shadowOpacity, 0.08)),0px 2px 4px 0px rgba(var(--joy-shadowChannel, 21 21 21) / var(--joy-shadowOpacity, 0.08)); overflow-wrap: break-word; position: relative; font-family: var(--joy-fontFamily-body, "Inter", var(--joy-fontFamily-fallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol")); font-size: var(--joy-fontSize-sm, 0.875rem); line-height: var(--joy-lineHeight-md, 1.5); color: var(--variant-solidColor, var(--joy-palette-neutral-solidColor, var(--joy-palette-common-white, #FFF))); --variant-borderWidth: 0px; background-color: var(--variant-solidBg, var(--joy-palette-neutral-solidBg, var(--joy-palette-neutral-500, #636B74))); }.css-1cvm7jf::before { content: ""; display: block; position: absolute; width: 100%; height: calc(10px + var(--variant-borderWidth, 0px)); }.css-1cvm7jf[data-popper-placement*="bottom"]::before { top: 0px; left: 0px; transform: translateY(-100%); }.css-1cvm7jf[data-popper-placement*="left"]::before { top: 0px; right: 0px; transform: translateX(100%); }.css-1cvm7jf[data-popper-placement*="right"]::before { top: 0px; left: 0px; transform: translateX(-100%); }.css-1cvm7jf[data-popper-placement*="top"]::before { bottom: 0px; left: 0px; transform: translateY(100%); }.css-1sdyn1d { --Icon-fontSize: calc(0.4 * var(--_root-size)); --CircularProgress-trackColor: var(--variant-softBg, var(--joy-palette-neutral-softBg, var(--joy-palette-neutral-100, #F0F4F8))); --CircularProgress-progressColor: var(--variant-solidBg, var(--joy-palette-primary-solidBg, var(--joy-palette-primary-500, #0B6BCB))); --CircularProgress-percent: 25; --CircularProgress-linecap: round; --_root-size: var(--CircularProgress-size, 24px); --_track-thickness: var(--CircularProgress-trackThickness, var(--CircularProgress-thickness, 3px)); --_progress-thickness: var(--CircularProgress-progressThickness, var(--CircularProgress-thickness, 3px)); --CircularProgress-size: 24px; --_thickness-diff: calc(var(--_track-thickness) - var(--_progress-thickness)); --_inner-size: calc(var(--_root-size) - 2 * var(--variant-borderWidth, 0px)); --_outlined-inset: max(var(--_track-thickness), var(--_progress-thickness)); width: var(--_root-size); height: var(--_root-size); border-radius: var(--_root-size); margin: var(--CircularProgress-margin); box-sizing: border-box; display: inline-flex; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; flex-shrink: 0; position: relative; color: var(--variant-softColor, var(--joy-palette-primary-softColor, var(--joy-palette-primary-700, #12467B))); --variant-borderWidth: 0px; }.css-18a5s3t { width: inherit; height: inherit; display: inherit; box-sizing: inherit; position: absolute; top: calc(-1 * var(--variant-borderWidth, 0px)); left: calc(-1 * var(--variant-borderWidth, 0px)); }.css-1c73xhe { cx: 50%; cy: 50%; r: calc(var(--_inner-size) / 2 - var(--_track-thickness) / 2 + min(0px, var(--_thickness-diff) / 2)); fill: transparent; stroke-width: var(--_track-thickness); stroke: var(--CircularProgress-trackColor); }.css-skc48w { --_progress-radius: calc(var(--_inner-size) / 2 - var(--_progress-thickness) / 2 - max(0px, var(--_thickness-diff) / 2)); --_progress-length: calc(2 * 3.1415926535 * var(--_progress-radius)); cx: 50%; cy: 50%; r: var(--_progress-radius); fill: transparent; stroke-width: var(--_progress-thickness); stroke: var(--CircularProgress-progressColor); stroke-linecap: var(--CircularProgress-linecap, round); stroke-dasharray: var(--_progress-length); stroke-dashoffset: calc(var(--_progress-length) - var(--CircularProgress-percent) * var(--_progress-length) / 100); transform-origin: center center; transform: rotate(-90deg); animation: var(--CircularProgress-circulation, 0.8s linear 0s infinite normal none running) animation-xnrbr3; }@-webkit-keyframes animation-xnrbr3 { 
+  0% { transform: rotate(-90deg); }
+  100% { transform: rotate(270deg); }
+}@keyframes animation-xnrbr3 { 
+  0% { transform: rotate(-90deg); }
+  100% { transform: rotate(270deg); }
+} arPreserve **/</style><style data-emotion="css" data-s=""></style><script src="./Precourse_files/container.js" data-cfasync="false" async="true" data-vendor="auryc" data-role="container" charset="utf-8"></script></head><body style="overflow: auto;" data-new-gr-c-s-check-loaded="14.1147.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1147.0"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="layout-wrapper MuiBox-root css-0"><div class="Toastify"></div><div class="MuiGrid-root MuiGrid-container top-bar-navigation css-1d3bbye"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-5 MuiGrid-grid-md-5 MuiGrid-grid-lg-6 col-1 css-13qysn5"><img src="./Precourse_files/logoWithName.82421bbee7ab1e637fefe6c65847798c.svg" alt="AccioJob Logo"><div class="switch-course MuiBox-root css-0"><div class=" course MuiBox-root css-0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M864 518H506V160c0-4.4-3.6-8-8-8h-26a398.46 398.46 0 0 0-282.8 117.1 398.19 398.19 0 0 0-85.7 127.1A397.61 397.61 0 0 0 72 552a398.46 398.46 0 0 0 117.1 282.8c36.7 36.7 79.5 65.6 127.1 85.7A397.61 397.61 0 0 0 472 952a398.46 398.46 0 0 0 282.8-117.1c36.7-36.7 65.6-79.5 85.7-127.1A397.61 397.61 0 0 0 872 552v-26c0-4.4-3.6-8-8-8zM705.7 787.8A331.59 331.59 0 0 1 470.4 884c-88.1-.4-170.9-34.9-233.2-97.2C174.5 724.1 140 640.7 140 552c0-88.7 34.5-172.1 97.2-234.8 54.6-54.6 124.9-87.9 200.8-95.5V586h364.3c-7.7 76.3-41.3 147-96.6 201.8zM952 462.4l-2.6-28.2c-8.5-92.1-49.4-179-115.2-244.6A399.4 399.4 0 0 0 589 74.6L560.7 72c-4.7-.4-8.7 3.2-8.7 7.9V464c0 4.4 3.6 8 8 8l384-1c4.7 0 8.4-4 8-8.6zm-332.2-58.2V147.6a332.24 332.24 0 0 1 166.4 89.8c45.7 45.6 77 103.6 90 166.1l-256.4.7z"></path></svg>Data Analytics</div><div class="active course MuiBox-root css-0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path></svg>Full Stack</div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-7 MuiGrid-grid-md-4 MuiGrid-grid-lg-6 col-2 css-10ltnos"><div class="ask-doubt-btn" aria-label="Chat with our team and get all your Coding or Non-Coding doubts resolved!"><span class="ask-doubt-text">Doubt Support</span><img src="./Precourse_files/askDoubt.cd68fe810b152567cd5819e4a8e57013.svg" class="ask-doubt-icon"></div><div class="profile-menu MuiBox-root css-0"><div class="profile-menu-btn MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault profile-menu-btn-avatar css-154ogbs">s</div><div class="profile-menu-btn-text MuiBox-root css-0">sumit <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg></div></div><ul class="profile-menu-list close desktop"><li>My Profile</li><li>Logout  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path><path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path></svg></li></ul></div></div></div><div class="desktop-layout MuiBox-root css-0" id="layout-wrapper"><div class="navigation close "><div class="nav-menu MuiBox-root css-0"><div class="nav-menu-item active MuiBox-root css-0" id="home"><div class="nav-menu-item-header MuiBox-root css-0"><div class="nav-menu-item-icon MuiBox-root css-0"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div><p class="nav-menu-item-label">Home</p></div></div><div class="nav-menu-group-item  MuiBox-root css-0" id="learn"><div class="nav-menu-item-header MuiBox-root css-0"><div class="nav-menu-item-icon MuiBox-root css-0"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></div><p class="nav-menu-item-label">Learn</p></div><div class="group-children MuiBox-root css-0"><div class="nav-menu-item  MuiBox-root css-0" id="papPreparation"><p>PAP Selection</p></div><div class="nav-menu-item  MuiBox-root css-0" id="aptitude"><p>Aptitude Resources</p></div></div></div><div class="nav-menu-group-item  MuiBox-root css-0" id="courses"><div class="nav-menu-item-header MuiBox-root css-0"><div class="nav-menu-item-icon MuiBox-root css-0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M229.89,72.25v0l0,0a15.93,15.93,0,0,0-6.18-6.06L135.68,18a15.94,15.94,0,0,0-15.36,0l-88,48.18a15.93,15.93,0,0,0-6.18,6.06l0,0v0A16,16,0,0,0,24,80.18v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,229.89,72.25ZM120,219.61,88,202.09V152a8,8,0,0,0-4.16-7L40,121v-32l80,43.8Zm8-100.73L48.66,75.44,83.14,56.57l41,22.45a8,8,0,0,0,7.68,0l41-22.45,34.48,18.87Zm88,2.1-43.84,24a8,8,0,0,0-4.16,7v50.09l-32,17.52V132.74l80-43.8Z"></path></svg></div><p class="nav-menu-item-label">Our courses</p></div><div class="group-children MuiBox-root css-0"><div class="nav-menu-item  MuiBox-root css-0" id="javaFullStack"><p>Java Full Stack</p></div><div class="nav-menu-item  MuiBox-root css-0" id="fsd"><p>MERN Full Stack</p></div><div class="nav-menu-item  MuiBox-root css-0" id="dataAnalytics"><p>Data Analytics</p></div></div></div><div class="nav-menu-item  MuiBox-root css-0" id="pap"><div class="nav-menu-item-header MuiBox-root css-0"><div class="nav-menu-item-icon MuiBox-root css-0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M16 12h2v4h-2z"></path><path d="M20 7V5c0-1.103-.897-2-2-2H5C3.346 3 2 4.346 2 6v12c0 2.201 1.794 3 3 3h15c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM5 5h13v2H5a1.001 1.001 0 0 1 0-2zm15 14H5.012C4.55 18.988 4 18.805 4 18V8.815c.314.113.647.185 1 .185h15v10z"></path></svg></div><p class="nav-menu-item-label">Pay After Placement</p></div></div><div class="nav-menu-item  MuiBox-root css-0" id="alumni"><div class="nav-menu-item-header MuiBox-root css-0"><div class="nav-menu-item-icon MuiBox-root css-0"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg></div><p class="nav-menu-item-label">Acciojob Alumni</p></div></div><div class="nav-menu-item  MuiBox-root css-0" id="doubt"><div class="nav-menu-item-header MuiBox-root css-0"><div class="nav-menu-item-icon MuiBox-root css-0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"></path></svg></div><p class="nav-menu-item-label">Doubt Support</p></div></div><div class="nav-menu-item  MuiBox-root css-0" id="refer"><div class="nav-menu-item-header MuiBox-root css-0"><div class="nav-menu-item-icon MuiBox-root css-0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"></path></svg></div><p class="nav-menu-item-label">Refer &amp; Earn</p></div></div></div></div><div class="main-content MuiBox-root css-0"><div class="questions-container"><div class="questions-navigation"><div class="nav-header"><div class="start"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg><label>Go Back to Module 1</label></div><div class="end"><div class=""><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class=""><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg></div></div></div></div><div class="question-container-wrapper"><iframe class="CodeEditor desktop-editor" allow="fullscreen" src="./Precourse_files/saved_resource.html"></iframe></div></div><div class="react-joyride"></div></div></div></div></div><!-- Cloudflare Pages Analytics --><script defer="" src="./Precourse_files/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;ca0f8afde948498f8365e8f987d690dc&quot;}"></script><!-- Cloudflare Pages Analytics --><script defer="" src="./Precourse_files/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;838922ee880fa8f5&quot;,&quot;r&quot;:1,&quot;version&quot;:&quot;2023.10.0&quot;,&quot;token&quot;:&quot;91fca02dfc1e425f8b1959d9b5bc54c7&quot;}" crossorigin="anonymous"></script>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
